@@ -1,3 +1,6 @@
+# CheatSheet
+
+
 # SQL 
 
 ### What is a DataBase ?
@@ -38,7 +41,7 @@ The name and country columns store string data types, whereas age stores integer
 Items in row are aligned from left to right, while columns are aligned from top to bottom. A row is a horizontal alignment of data, while a column is vertical. Data in a row contains information that describes a single entity, while data in a column describes a field of information all entities possess.
 
 You need to store your matrix in table specifying the columns and rows like this
-```
+```JS
 CREATE TABLE nom_de_la_table
 (
     colonne1 type_donnees,
@@ -48,7 +51,7 @@ CREATE TABLE nom_de_la_table
 );
 ```
 You insert your data:
-```
+```JS
 CREATE TABLE utilisateur
 (
     id INT PRIMARY KEY NOT NULL,
@@ -63,7 +66,7 @@ CREATE TABLE utilisateur
 )
 ```
 You can simply find what you need using two queries
-```
+```JS
 select column, row from utilisateur where value = 'nom VARCHAR(100)';
 select value from utilisateur where column = 2 and row = 3;
 ```
@@ -102,11 +105,11 @@ Indexes are special lookup tables that need to be used by the database search en
 
 For example, in order to reference all pages in a book that address a particular subject, you go to the index first, which lists all the topics alphabetically, and then you go to one or more specific page numbers.
 Two primary methods to use the index in SQL are:
-```
+```JS
     CREATE INDEX Command 
     DROP INDEX Command 
 ```
-```
+```JS
     CREATE INDEX name_of_Index ON name_Of_Table(Attribute1, Attribute2,...);`
 ```
 
